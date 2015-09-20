@@ -23,7 +23,7 @@ def inventory():
 
 def town():
     while True:
-        choice = raw_input("> ")
+        choice = raw_input("> ").lower()
         if "shopkeep" in choice:
             print "'Welcome, stranger'"
             shopkeep()
