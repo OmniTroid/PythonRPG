@@ -42,7 +42,7 @@ def town():
 
 def shopkeep():
     while True:
-        choice = raw_input("> ")
+        choice = raw_input("> ").lower()
         if choice == "help":
             print "list: lists the items for sale"
             print "sell <quantity> <item>: sells the given item in given quantity from your inventory"
@@ -108,9 +108,9 @@ def sell(amount, item):
                 singleorplural = plural[item].lower()
 
             print "%d %s eh? I can give you %d gold for that. Deal?" % (intamount, singleorplural, total)
-            answer = raw_input("> ")
+            answer = raw_input("> ").lower()
 
-            if "yes" in answer.lower() or "deal" in answer.lower():
+            if "yes" in answer or "deal" in answer:
                 print "'Alright, it's a deal.'"
                 global playercash
                 playercash += total
@@ -148,9 +148,9 @@ def buy(amount, item):
                 singleorplural = plural[item].lower()
 
             print "'%d %s eh? I'll need %d gold for that. Deal?'" % (intamount, singleorplural, total)
-            answer = raw_input("> ")
+            answer = raw_input("> ").lower()
 
-            if "yes" in answer.lower() or "deal" in answer.lower():
+            if "yes" in answer or "deal" in answer:
                 print "'Alright, it's a deal.'"
                 playercash -= total
                 playerinventory[item] += intamount
