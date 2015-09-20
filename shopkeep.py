@@ -174,9 +174,10 @@ def appleseller():
 def castle():
     print "There is nothing interesting here. For now."
     town()
-
-print "It's a quiet day in town, do you go to the shopkeep, the apple seller, the castle or open your inventory?"
-town()
+    
+if __name__ == "__main__":
+    print "It's a quiet day in town, do you go to the shopkeep, the apple seller, the castle or open your inventory?"
+    town()
 
 
 
