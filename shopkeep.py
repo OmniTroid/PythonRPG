@@ -1,5 +1,6 @@
 __author__ = 'DS'
 
+print "L O L"
 
 global playercash
 playercash = 200
