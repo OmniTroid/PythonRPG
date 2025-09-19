@@ -1,5 +1,3 @@
-__author__ = 'DS'
-
 playercash = 200
 value = {"apple": 10, "rope": 20, "bedroll": 100, "bomb": 30}
 playerinventory = {"apple": 3, "rope": 7, "bedroll": 1, "bomb": 0}
