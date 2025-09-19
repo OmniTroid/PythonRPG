@@ -1,2 +1,7 @@
 # PythonRPG
-# i dunno what youre looking for here
+
+Run with
+
+```(bash)
+python3 main.py
+```
